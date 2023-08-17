@@ -1,0 +1,74 @@
+.card{
+  height: 400px;
+}
+
+img{
+  height: 60%;
+}
+
+.card-body{
+  height: 40%;
+}
+
+i{
+  cursor: pointer;
+}
+
+.loader-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.dots .dot {
+  position: absolute;
+  z-index: -1;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: black;
+}
+
+.dots .dot:nth-child(1) {
+  left: 730px;
+  animation: dot-stage1 0.5s infinite;
+}
+
+.dots .dot:nth-child(2) {
+  left: 700px;
+  animation: dot-stage1 0.5s infinite;
+}
+
+.dots .dot:nth-child(3) {
+  left: 670px;
+  animation: dot-stage1 0.5s infinite;
+}
+
+.dots .dot:nth-child(4) {
+  left: 10px;
+  animation: dot-stage2 0.5s infinite;
+}
+
+@keyframes dot-stage1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-24px, 0);
+  }
+}
+
+@keyframes dot-stage2 {
+  0% {
+    transform: scale(1);
+  }
+
+  5%, 100% {
+    transform: scale(0);
+  }
+}
